@@ -1,0 +1,416 @@
+/*!
+ * Rapid Bootstrap V4
+ * https://github.com/niklausgerber/rapid-bootstrap-v4
+ *
+ * Copyright (c) 2016 Niklaus Gerber, niklausgerber.com
+ * Licensed under the MIT license
+*/
+
+/* Google Fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700);
+/* font-family: 'Vollkorn', serif; */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+/* font-family: 'Open Sans', sans-serif; */
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap');
+/*  font-family: 'Lora', serif; */
+</style>
+
+/* Setup */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Open Sans ', sans-serif; */
+
+    font-family: 'Lora', serif; 
+    font-style: normal;
+    font-weight: 300; /* 500 */
+    line-height: 1.5em;
+    margin: 0 auto;
+    color: #131726; /* 1d1d1d */
+    background: #fff; /* efefef fcfcfc */
+    text-rendering: optimizelegibility;
+}
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+
+    font-style: normal;
+    font-weight: 700;
+}
+h1 {
+    font-size: 2em;
+    line-height: 1.25em;
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
+}
+h2 {
+    font-size: 1.625em;
+    line-height: 1.15384615em;
+    margin-top: 0.576923075em;
+    margin-bottom: 0.576923075em;
+}
+h3 {
+    font-size: 1.375em;
+    line-height: 1.13636364em;
+    margin-top: 0.56818182em;
+    margin-bottom: 0.56818182em;
+}
+h4 {
+    font-size: 1.125em;
+    line-height: 1.11111111em;
+    margin-top: 0.555555555em;
+    margin-bottom: 0.555555555em;
+}
+h5,
+h6 {
+    font-size: 1em;
+    line-height: 1.5em; /* 1.5em */
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+p {
+    /* font-family: 'Open Sans ', sans-serif; */
+    font-family: 'Lora', serif; 
+    font-size: 1.1em; }
+
+/* p */
+ul, ol, pre, table,
+blockquote {
+    margin-top: 0em;
+    margin-bottom: 1.5em;
+    font-family: 'Lora', serif; 
+    /* font-family: 'Roboto Slab', serif; */
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #d4d4d4;
+    margin: 1em 0;
+    padding: 0;
+}
+b,
+strong,
+em,
+small,
+code {
+    line-height: 1;
+}
+sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+/* Hyperlinks */
+
+a {
+    color: #808080;
+    text-decoration: underline;
+    border: none;
+}
+a:visited {
+    color: #808080;
+}
+a:hover {
+    color: #1d1d1d;
+    text-decoration: none;
+}
+a:focus {
+    outline: thin dotted;
+}
+p a {
+    /* Optimized for touch devices */
+    
+    margin: -.5em;
+    padding: .5em;
+    position: relative;
+}
+/* Lists */
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: 1.25em;
+}
+li ul,
+li ol {
+    margin: 0;
+    padding: 0;
+}
+/* Quotes */
+
+blockquote,
+q {
+    quotes: none;
+    color: #333;
+    font-style: italic;
+}
+blockquote p:before {
+    content: '«';
+}
+blockquote p:after {
+    content: '»';
+}
+blockquote > p {
+    padding: 0;
+}
+/* Table */
+
+table {
+    width: 100%;
+    text-align: left;
+}
+th {
+    font-family: 'Roboto', sans-serif;
+}
+/* Code */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-style: none;
+    border-color: #E5E5E5;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 1em;
+}
+/* Allow line wrapping of 'pre' */
+
+pre,
+code,
+kbd,
+samp {
+    margin-bottom: 2em;
+    margin-top: 2em;
+    background-color: #E5E5E5;
+    color: #1d1d1d;
+    font-family: "inconsolata", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875em;
+    line-height: 1.25em;
+}
+
+/* Responsive Images */
+
+img,
+video,
+canvas,
+object,
+embed {
+    max-width: 100%;
+    _width: 100%;
+}
+img {
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    /* Improve IE's resizing of images */
+    
+    display: block;
+    margin-bottom: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive Design */
+
+.container {
+    width: 90%;
+    max-width: 960px; /* 780px */
+    margin: auto;
+}
+/* Column Grid */
+
+.grid {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+/* Media Queries 
+Changes on the body font-size will have a direct effect on the whole typography of the CSS boostrap.
+*/
+
+@media (min-width: 320px) {
+    body {
+        font-size: 1em; /* 1.125em */
+        /* Don't break the typographic rhythm. You can move either way in 0.125em or % steps. 1.375 —> 1.250 —> 1.125 —> 1.000 */
+    }
+}
+@media (min-width: 600px) {
+    body {
+        font-size: 1em; /* 1.25em */
+        /* Don't break the typographic rhythm. You can move either way in 0.125em or % steps. 1.375 —> 1.250 —> 1.125 —> 1.000 */
+    }
+}
+@media (min-width: 768px) {
+    body {
+        font-size: 1em; 
+        /* Don't break the typographic rhythm. You can move either way in 0.125em or % steps. 1.375 —> 1.250 —> 1.125 —> 1.000 */
+    }
+    /* Column Grid */
+    
+    .grid {
+        display: inline;
+        float: left;
+    }
+    /* 2 Column Grid */
+    
+    .half {
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    /* 3 Column Grid  */
+    
+    .third {
+        width: 31.33333%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    /* 4 Column Grid */
+    
+    .fourth {
+        width: 23%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+@media (min-width: 1024px) {
+    body {
+        font-size: 1.375em;
+        /* Don't break the typographic rhythm. You can move either way in 0.125em or % steps. 1.375 —> 1.250 —> 1.125 —> 1.000 */
+    }
+}
+@media (min-width: 1360px) {
+    body {
+        font-size: 1.375em;
+        /* Don't break the typographic rhythm. You can move either way in 0.125em or % steps. 1.375 —> 1.250 —> 1.125 —> 1.000 */
+    }
+    blockquote,
+    q {
+        quotes: none;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        margin-left: -100px;
+        margin-right: -100px;
+    }
+}
+/* Micro Clearfix Hack */
+
+.cf:before,
+.cf:after {
+    content: "";
+    /* For modern browsers */
+    
+    display: table;
+    /* For modern browsers */
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    zoom: 1;
+    /* For IE 6/7 (trigger hasLayout) */
+}
+
+/********** fogfish addendum **********/
+
+h4, h5, h6 {color: #4B89CD; }
+h6 {font-size: .9em; }
+
+/* ~~ Top Navigation Bar ~~ https://codepen.io/senff/pen/LFiHp */
+.navigation-bar {
+    background-color: none;
+    height: 32px;
+    width: 100%;
+    background-repeat: repeat-x;
+    margin-top: 20px; }
+
+.navigation-bar ul {
+    padding: 0px;
+    margin: 0px;
+    text-align:center; }
+
+.navigation-bar li {
+    list-style-type: none;
+    padding: 0px;
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display:inline; }
+ 
+.navigation-bar li a {
+    color: #4B89CD;
+    background-color: #FFF;
+    font-size: .6em;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif; 
+    text-decoration: none;
+    border-radius: 4px;
+    padding: .6em;
+    line-height: 1em;
+    margin-right: .5em;
+    overflow: hidden; }
+
+.navigation-bar li a:hover { 
+    background-color: #4B89CD;
+    transition: background-color 1s ease-out;
+    color: white; }
+
+.footer, .push {
+  height: 3em; }
+
+.footer {
+    font-size: .6em;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-align: center; }
+
+.footer {
+    position: inline;
+    display:block;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #FDFDFD;
+    color: #131726; }  
+
+/* Content was hidden by footer > Moved push inside of container. */    
+
+  
